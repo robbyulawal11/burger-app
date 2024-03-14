@@ -5,7 +5,7 @@ const OrderHeader = ({
     allIngredients=[],
     selectedIngredients=[],
     onReset,
-}) => {
+    }) => {
     const isEmptySelectedIngredients = selectedIngredients.length === 0;
     
     const totalCost = () => {

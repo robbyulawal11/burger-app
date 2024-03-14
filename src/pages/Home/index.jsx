@@ -28,7 +28,7 @@ const Home = () => {
                     <p>Where you will eat virtual burger!</p>
                 </div>
             </section>
-            <section className="d-flex justify-content-center vh-100">
+            <section className="d-flex flex-column justify-content-center align-items-center">
                 <div className="row gap-3 text-white d-flex flex-column justify-content-center">
                 {listCTA.map((item, i) => (
                     <Link key={i} to={item?.link}>

@@ -87,7 +87,9 @@ const Order = () => {
                 <OrderHeader
                 allIngredients={allIngredients}
                 selectedIngredients={selectedIngredients}
-                onReset={() => selectedIngredientsSet([])}
+                onReset={() => {selectedIngredientsSet([]);
+                isReachMaxSet(false);
+                isDoneSet(false);}}
                 />
                 <OrderBurgerDisplay
                 selectedIngredients={selectedIngredients}
