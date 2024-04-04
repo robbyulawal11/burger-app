@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
+
+import { useSelector } from "react-redux";
+
 const OrderIngridientsPicker = ({
-    allIngredients=[],
     manageIngredients,
-    isReachMax,
+    isReachMax
 }) => {
+    const {allIngredients } = useSelector((state)=> state.burger);
     return ( 
         <section>
             {isReachMax && <div className="alert alert-danger text-center fw-bold" role="alert">You reach the maximal quantity of ingredients</div>}

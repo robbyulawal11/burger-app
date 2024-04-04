@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Order from './pages/Order';
 import Feedback from './pages/Feedback';
+import Post from './pages/Posts';
+import Weather from './pages/weather';
 
 const routers = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const routers = createBrowserRouter([
   {
     path: "/feedback",
     element: <Feedback/>
+  },
+  {
+    path: "/posts",
+    element: <Post/>
+  },
+  {
+    path: "/weather",
+    element: <Weather/>
   }
 ])
 

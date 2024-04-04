@@ -96,9 +96,8 @@ const Order = () => {
                 removeIngredient={(idx) => manageIngredients("remove", undefined, idx)}
                 />
                 <OrderIngridientsPicker 
-                    allIngredients={allIngredients}
-                    manageIngredients={(id) => manageIngredients("add", id)}
                     isReachMax={isReachMax}
+                    manageIngredients={(id) => manageIngredients("add", id)}
                     />
             </div>
         </div>
