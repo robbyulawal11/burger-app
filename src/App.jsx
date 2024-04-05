@@ -7,6 +7,7 @@ import Order from './pages/Order';
 import Feedback from './pages/Feedback';
 import Post from './pages/Posts';
 import Weather from './pages/weather';
+import Recipe from './pages/Recipe';
 
 const routers = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const routers = createBrowserRouter([
   {
     path: "/weather",
     element: <Weather/>
+  },
+  {
+    path: "/recipe",
+    element: <Recipe/>
   }
 ])
 

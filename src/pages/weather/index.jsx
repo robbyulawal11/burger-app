@@ -19,6 +19,7 @@ const Weather = () => {
     }, [city]); 
 
     console.log(isLoading);
+    console.log(data)
     return ( 
         <div className="container">
             <h2>Cuaca Hari ini</h2>

@@ -11,7 +11,7 @@ export const useFetch = () => {
 
       const {data: dataRes} = await axios({
         method:"get",
-        baseURL: import.meta.env.VITE_ENDPOINT_WEATHER,
+        baseURL: import.meta.env.VITE_ENDPOINT,
         url: url,
         headers: {
           "Content-Type": "application/json",
